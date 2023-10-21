@@ -1,0 +1,106 @@
+*{
+    font-family: 'Verdana', sans-serif;
+}
+html{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+header{
+    height: 50px;
+    background-color: #000000dd;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+header .header-text{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+header h1{
+    margin: 0;   
+    padding: 0 15px;
+    white-space: nowrap;
+}
+.instructions{
+    height: 100%;
+    border-left: 1px solid white;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+}
+#color-selector-instructions{
+    font-size: 1.1rem;
+    margin: 0;
+}
+#pallete-preview{
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+#preview-colors{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.preview-color{
+    height: 22px;
+    width: 22px;
+    margin: 0 10px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.preview-color:last-of-type{
+    margin-right: 20px;
+}
+
+header button{
+    height: 48px;
+    width: 48px;
+    border: 1px solid #ffffffdd;
+    color: white;
+    background: transparent;
+
+}
+
+#random-colors{
+    background-color: rgb(169, 169, 169);
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.random-color{
+    height: 50%;
+    width: calc(100%/3);
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: fit-content;
+    background-color: blue;
+    color: black;
+    text-align: center;
+    padding: 5px 5px;
+    font-size: 10px;
+    margin-top: 25px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .preview-color:hover .tooltiptext {
+    visibility: visible;
+  }
